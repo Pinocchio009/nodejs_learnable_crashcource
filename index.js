@@ -8,6 +8,7 @@ const { StringDecoder } = require('string_decoder');
 const routeHandler = require('./lib/routehandler');
 
 const httpServer = http.createServer((req, res) => {
+  console.log(req)
   //parse the incoming url
   const parsedurl = url.parse(req.url, true);
   //get the path name
